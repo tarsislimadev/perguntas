@@ -17,6 +17,6 @@ npm install --save @ionic/pwa-elements
 ionic cordova plugin add cordova-sqlite-storage
 npm install --save @ionic/storage
 
-# Cordova Google Plus SDK plugin
+# Cordova Google Plus SDK plugin (https://ionicthemes.com/tutorials/about/ionic-google-login)
 ionic cordova plugin add cordova-plugin-googleplus --save --variable REVERSED_CLIENT_ID=YOUR_REVERSE_CLIENT_ID
 npm install --save @ionic-native/google-plus

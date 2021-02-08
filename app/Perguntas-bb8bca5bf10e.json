@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "perguntas-304217",
+  "private_key_id": "bb8bca5bf10e7e9f60affaf7197123000dd943e8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCeruMcE6bmsNCz\nuDbOs6nnlPI1ucjYNMmXbkyM8dUpDMRx1Me/SyDPu0sOuWJCF0Yt1wsreh4+D4TR\nSu3Qhrv3GWLlR5riCefFBX3yxyFTW+jONjwWO6E4SZRGnNCnBRapMjR1t6wQ9W5C\nK1dWBwChUBH279R0SilT93Xwufe8IodTzXGH+8g8o1Q3mEw5ZsETxUIdwGo9al/L\nKBTEbth2Ex5yAovUWmYZzHbxtwsawJdlNuY/ASUUh7Y1aWG47AlXzMIgCwY8eZRg\nDH2lL7LqAGsREmUl6eyA0ftFAAzTmK16IhHqOLKTMLZPPTqfOzgmCr7+zNC/63uJ\n/Yoq6IhhAgMBAAECggEABlOowHTUIbyJBbFhlgo5yv74TUYUCPLJ2tzN9oyp2BIn\nPvah5DGlpEKucm7XyRTOeoNpcZlT3VuXCxU2uCq3EdoURFn/heWpNQTMCcMAxCcU\n+CvXZ3eHLQxZ+hrEgvRD/AkBaHQjSyXN+JtrxwVOdCASJ0tWqDBQx4VFUYzIoNqb\nfyVhglqDyLfa5wXrHhRhlwVGVs/I09q6Y36NxpV7ICh2YeDa2mdfln5xr0ZGd5ta\nanpVDXt5P8fG3QTLezuEjwNMZYCTHsVp+BidXXjo1iPvNp+gZgZkiO/C7UZxRTDg\nlq8Vs03SiYbT97Da3Z7w48uyTAI0Qg1DGgdr05XF8QKBgQDReTgzdnY866b/bRFh\nj1AyTVMXT7Ka9tcH9s4ekTOpJpcXDiKk20TE09TD7KlCEn7iFehnJRLZdTfRD2ku\n3YB/I/5Ws778d3OzDeimqd2g+s/0n2iEbwKe85zkWsKNAAoZhrARkNKtPO6EEsgX\nmk9qfFKyiJawZlUekzYG/tay3QKBgQDB7bMPQ5U0yNcjnwuOeSbBYx2uLSweRreR\nnGpL6W7xO1e59YkHFRUK/2zCCXdsjvw+fJgehPZa+p6A2HDRLTn8lM/ycpHt0FXZ\nuiD0Eh7/Hm8hQH9bHYAVesJ53OFBKRJfFthYGAAMQjyQPPb+IqAeg/FBTCHrBz18\n382AuOTpVQKBgQCcupEFWE4xWLQzitylXUBI0rgnyfa9oZDUIaKpFkVL+1ay5l2f\ncXvrtP8NtOYTTJlo+bFQc1m+IMkpf9lYOlzpQ/oJzyVH6uxDfVWkVZZA20h7JEZk\nSFbyrR2ncgz8yJnF7ZORIQWwntVrNk5F8qwW5XxOnon45Cgt30FeTJBBdQKBgQCO\nHX6aEgHW49Pdc+FJMHl5QQRwLwRkz5gY6lJvfQrjV4Srb0dS3F1GaPavn7ZX5NTv\niekEfJX5CC5955+NeyJCel+FofZVG9a+LwuVMW5rsUbpTFXIVO8XTpYULg0Y7ltb\nOeejbzshwKyXW0X56TAEDNcQ7hTxIqYpy+zShyyh3QKBgB123PFHEO9rLr6kWzBw\nI9Xfu2hh+yvBkWQGhHYrHnLAfCE0qwMcYU24P9wCvKQhd5yO3BpHlnr6UO7xW68L\npCSTdKPRF4HSj0EfZdj8mcuBXKZfZ/McQNOyr5e7vAnRRnT30ZQBY7iko66bEGTT\n30XvZl7Ap8SmHPd+qHpddmAB\n-----END PRIVATE KEY-----\n",
+  "client_email": "servico-de-seguranca@perguntas-304217.iam.gserviceaccount.com",
+  "client_id": "110126505857909783662",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/servico-de-seguranca%40perguntas-304217.iam.gserviceaccount.com"
+}

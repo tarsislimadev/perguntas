@@ -1,8 +1,4 @@
 <ion-content [fullscreen]="true" maxlength="80%">
   <img src="assets/logo.png" alt="porque" />
-  <ion-text color="primary">
-    <p>Login</p>
-  </ion-text>
-  <ion-button color="primary" expand="full">Google</ion-button>
-  <ion-button color="primary" expand="full">Twitter</ion-button>
+  <ion-button color="primary" expand="full" (click)="onLoginClick($event, LOGIN_GOOGLE)">Login</ion-button>
 </ion-content>

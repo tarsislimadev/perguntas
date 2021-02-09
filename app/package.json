@@ -41,6 +41,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-googleplus": "^8.5.1",
     "cordova-sqlite-storage": "^5.1.0",
     "jasmine-core": "~3.6.0",

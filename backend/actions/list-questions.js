@@ -1,1 +1,1 @@
-module.exports = ({}) => ({questions:[]});
+module.exports = () => ({ questions: [] });

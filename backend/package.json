@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "PORT=3000 nodemon"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Tarsis de Lima (https://github.com/tmvdl)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "parseurl": "^1.3.3"
+  }
+}

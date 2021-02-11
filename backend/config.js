@@ -7,7 +7,10 @@ module.exports = {
       host: process.env.DBHOST || "postgres",
       port: process.env.DBPORT || "3000",
       dialect: process.env.DBTYPE || "postgres",
-      logging: process.env.DBLOG || true ? console.info : () => {},
+      logging: process.env.DBLOG || true ? console.info : () => { },
     },
   ],
+  http: {
+    port: process.env.PORT || "80",
+  }
 };

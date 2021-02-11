@@ -1,7 +1,7 @@
 const http = require("http");
 const parse = require("parseurl");
 
-const { PORT: port } = require("./config");
+const { http: { port } } = require("./config");
 
 const actions = require("./actions");
 

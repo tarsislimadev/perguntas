@@ -1,39 +1,55 @@
+-- TABLES --
 -- user
-create table user(
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+create table users (
+  id SERIAL,
   created TIMESTAMP,
-  deleted TIMESTAMP
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
 );
 -- login provider
-create table login_provider(
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  value TINYTEXT,
+create table login_providers (
+  id SERIAL,
+  value character varying(25) NOT NULL,
   created TIMESTAMP,
-  deleted TIMESTAMP
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
 );
 -- login
-create table login (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  user int not null references user(id),
-  login_provider int not null references login_provider(id),
+create table logins (
+  id SERIAL,
+  value character varying(25) NOT NULL,
+  creator_user INTEGER NOT NULL REFERENCES users(id),
+  login_provider INTEGER NOT NULL REFERENCES login_providers(id),
   created TIMESTAMP,
-  deleted TIMESTAMP
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
 );
 -- question
-create table question (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  value TINYTEXT NOT NULL,
-  user int not null references user(id),
+create table questions (
+  id SERIAL,
+  value character varying(25) NOT NULL,
+  creator_user INTEGER NOT NULL REFERENCES users(id),
   created TIMESTAMP,
-  deleted TIMESTAMP
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
 );
 -- answer
-create table answer(
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  text TINYTEXT NOT NULL,
-  review TINYINT,
-  question int not null references question(id),
-  user int not null references user(id),
+create table answers (
+  id SERIAL,
+  value character varying(25) NOT NULL,
+  question INTEGER NOT NULL REFERENCES questions(id),
+  creator_user INTEGER NOT NULL REFERENCES users(id),
   created TIMESTAMP,
-  deleted TIMESTAMP
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
+);
+-- review
+create table reviews (
+  id SERIAL,
+  value character varying(25) NOT NULL,
+  question INTEGER NOT NULL REFERENCES questions(id),
+  creator_user INTEGER NOT NULL REFERENCES users(id),
+  created TIMESTAMP,
+  deleted TIMESTAMP,
+  PRIMARY KEY (id)
 );

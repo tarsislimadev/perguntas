@@ -7,3 +7,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5432:5432"
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+    links:
+      - database
+    ports:
+      - "8080:80"

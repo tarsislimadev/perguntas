@@ -1,3 +1,3 @@
 # perguntas
 
-Aplicativos de perguntas e respostas
+Aplicativo de perguntas e respostas

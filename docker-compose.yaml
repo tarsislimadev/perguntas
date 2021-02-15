@@ -2,18 +2,21 @@ version: '3'
 
 services:
   database:
-    build:
-      context: ./database
-      dockerfile: Dockerfile
+    image: postgres:13.2
+    environment:
+      - POSTGRES_PASSWORD=app
     ports:
       - "5432:5432"
+    networks:
+      - perguntas
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    build: ./backend
     depends_on:
-      - database
-    links:
       - database
     ports:
       - "8080:80"
+    networks:
+      - perguntas
+
+networks: 
+  perguntas:

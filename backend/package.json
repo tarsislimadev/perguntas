@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
-    "dev": "PORT=3000 nodemon"
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed:all": "npx sequelize-cli db:seed:all",
+    "dev": "PORT=3000 nodemon",
+    "start:app": "node .",
+    "start": "npm run db:migrate && npm run db:seed:all && npm run start:app"
   },
   "keywords": [
     "backend"

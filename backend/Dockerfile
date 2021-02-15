@@ -1,8 +1,8 @@
-FROM node:15.7.0
+FROM node:15.8.0
 
-ENV DBNAME=app
+ENV DBNAME=postgres
 
-ENV DBUSER=app
+ENV DBUSER=postgres
 
 ENV DBPASS=app
 
@@ -21,6 +21,8 @@ WORKDIR /app
 COPY . .
 
 RUN npm ci
+
+RUN node config.db.js
 
 EXPOSE 80
 

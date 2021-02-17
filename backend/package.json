@@ -6,10 +6,12 @@
   "scripts": {
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:seed": "npx sequelize-cli db:seed",
+    "db": "npm run db:migrate && npm run db:seed",
     "dev": "PORT=3000 nodemon",
+    "docker": "sleep 10 && npm start",
     "lint": "standard",
     "start:app": "node .",
-    "start": "npm run db:migrate && npm run db:seed && npm run start:app"
+    "start": "npm run db && npm run start:app"
   },
   "keywords": [
     "backend"

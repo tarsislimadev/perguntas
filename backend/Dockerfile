@@ -1,5 +1,7 @@
 FROM node:15.8.0
 
+EXPOSE 80
+
 ENV DBNAME=postgres
 
 ENV DBUSER=postgres
@@ -24,6 +26,4 @@ RUN npm ci
 
 RUN node config.db.js
 
-EXPOSE 80
-
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "docker" ]

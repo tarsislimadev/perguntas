@@ -1,3 +1,3 @@
 # perguntas
 
-Aplicativo de perguntas e respostas
+App of "por que"

@@ -1,25 +1,45 @@
 
 import { log } from 'debug'
 
-const end = async (middlewares, request, response, next) => {
-  let code = 200
-  let result
+const runMiddlewares = async (middlewares, request, response) => {
+  let data = {}
 
-  try {
-    for (const middleware of middlewares) {
-      result = await middleware(request, response)
+  for (const middleware of middlewares) {
+    const fromMid = await middleware(request, response)
+
+    const { code, result, data: obj } = fromMid || {}
+
+    if (obj) {
+      data = { ...data, ...obj }
     }
 
-    if (result === undefined) {
-      result = await next()
+    if (code || result) {
+      return { code, result, data }
     }
-  } catch (error) {
-    log(error)
-    code = 500
-    result = { message: '' }
   }
 
-  response.status(code).json(result)
+  return { data }
+}
+
+const end = async (middlewares, request, response, next) => {
+  try {
+    const fromMid = await runMiddlewares(middlewares, request, response)
+
+    let { code, result, data } = fromMid || {}
+
+    if (result === undefined) {
+      result = await next(data)
+    }
+
+    if (code === undefined) {
+      code = 200
+    }
+
+    response.status(code).json(result)
+  } catch (error) {
+    log(error)
+    response.status(500).json({ message: 'error on server' })
+  }
 }
 
 export default end

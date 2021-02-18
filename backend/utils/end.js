@@ -1,7 +1,7 @@
 
 import { log } from 'debug'
 
-export default async function (middlewares, request, response, next) {
+const end = async (middlewares, request, response, next) => {
   let code = 200
   let result
 
@@ -21,3 +21,5 @@ export default async function (middlewares, request, response, next) {
 
   response.status(code).json(result)
 }
+
+export default end

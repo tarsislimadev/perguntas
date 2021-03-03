@@ -12,6 +12,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "extensionPack": [
+    "loiane.ionic-extension-pack"
+  ],
   "dependencies": {
     "@angular-devkit/core": "^11.1.4",
     "@angular-devkit/schematics": "^11.1.4",

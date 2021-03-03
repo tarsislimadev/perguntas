@@ -15,6 +15,15 @@ services:
       - "8080:3000"
     networks:
       - perguntas
+  app:
+    build: ./app
+    depends_on:
+      - backend
+    volumes: 
+      - ./app:/app
+      - ./logs/app:/root/.npm/_logs/
+    ports: 
+      - "8000:8100"
 
 networks: 
   perguntas:

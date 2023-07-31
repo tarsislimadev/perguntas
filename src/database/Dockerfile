@@ -1,4 +1,4 @@
-FROM postgres:13.2
+FROM postgres:alpine
 
 ENV POSTGRES_PASSWORD=app
 

@@ -2,28 +2,18 @@ version: '3'
 
 services:
   database:
-    build: ./database
+    build: './src/database'
     ports:
-      - "5432:5432"
-    networks:
-      - perguntas
+      - '5432:5432'
+
   backend:
-    build: ./backend
-    depends_on:
-      - database
+    build: './src/backend'
     ports:
-      - "8080:3000"
-    networks:
-      - perguntas
+      - '8080:3000'
+
   app:
-    build: ./app
-    depends_on:
-      - backend
+    build: './src/app'
     volumes: 
       - ./app:/app
-      - ./logs/app:/root/.npm/_logs/
     ports: 
-      - "8000:8100"
-
-networks: 
-  perguntas:
+      - '8000:8100'

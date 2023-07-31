@@ -1,3 +1,5 @@
-# perguntas
+# Perguntas
 
-App of "por que"
+## License
+
+[MIT](./LICENSE)
